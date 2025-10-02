@@ -1,0 +1,292 @@
+/* Variables CSS para mantener consistencia en los colores */
+:root {
+    --primary-color: #22345C;
+    --secondary-color: #2B4A7A;
+    --accent-color: #3B6BAA;
+    --micoope-green: #7AC143;
+    --micoope-green-dark: #4B8B2B;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --dark-color: #1A2233;
+    --light-color: #F4F6F8;
+    --white: #FFFFFF;
+    --light-blue-header: #2c86cf;
+}
+
+/* ==================== ESTILOS GENERALES ==================== */
+body {
+    background: linear-gradient(135deg, #22345C 0%, #3B6BAA 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 20px 40px rgba(34, 52, 92, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+/* ==================== ESTILOS DEL ENCABEZADO ==================== */
+header {
+    background: linear-gradient(45deg, var(--light-blue-header), var(--accent-color));
+    color: var(--white);
+    border-radius: 15px 15px 0 0;
+    margin: -20px -20px 0 -20px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(34, 52, 92, 0.3);
+    font-weight: 700;
+    color: white !important;
+}
+
+header p {
+    color: white !important;
+}
+
+/* ==================== ESTILOS DE NAVEGACIÓN ==================== */
+.nav-tabs {
+    border-bottom: 3px solid var(--micoope-green);
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin: 0 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: rgba(34, 52, 92, 0.08);
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link:hover {
+    background: rgba(42, 74, 122, 0.15);
+    color: var(--micoope-green-dark);
+    transform: translateY(-2px);
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--micoope-green);
+    color: var(--white);
+    border: none;
+    box-shadow: 0 4px 8px rgba(122, 193, 67, 0.18);
+}
+
+/* ==================== ESTILOS DE TARJETAS ==================== */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: var(--light-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(34, 52, 92, 0.13);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0;
+    border: none;
+    font-weight: 600;
+    background: linear-gradient(90deg, var(--primary-color) 60%, var(--micoope-green) 100%);
+    color: var(--white);
+}
+
+/* ==================== ESTILOS DE FORMULARIOS ==================== */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e0e4ea;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.form-control:focus {
+    border-color: var(--micoope-green);
+    box-shadow: 0 0 0 0.2rem rgba(122, 193, 67, 0.18);
+    transform: scale(1.02);
+}
+
+.form-control-lg {
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+}
+
+/* ==================== ESTILOS DE BOTONES ==================== */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 12px 24px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(34, 52, 92, 0.18);
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--micoope-green), var(--micoope-green-dark));
+    color: var(--white);
+}
+
+.btn-success {
+    background: linear-gradient(45deg, var(--micoope-green), var(--micoope-green-dark));
+    color: var(--white);
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+}
+
+/* ==================== ESTILOS DE ALERTAS ==================== */
+.alert {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(34, 52, 92, 0.08);
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #e6f7e6, #c8f2c8);
+    color: var(--micoope-green-dark);
+}
+
+/* ==================== ESTILOS DE TABLAS ==================== */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.table thead th {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.table tbody td {
+    text-align: center;
+    padding: 12px 10px;
+    border-color: #e0e4ea;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(122, 193, 67, 0.08);
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+/* ==================== ESTILOS DE TARJETAS DE RESUMEN ==================== */
+.border.rounded {
+    border: 2px solid #e0e4ea !important;
+    transition: all 0.3s ease;
+}
+
+.border.rounded:hover {
+    border-color: var(--micoope-green) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(34, 52, 92, 0.10);
+}
+
+/* ==================== DISEÑO RESPONSIVO ==================== */
+@media (max-width: 768px) {
+    .container-fluid {
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    header {
+        margin: -10px -10px 0 -10px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+
+    .btn-lg {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* ==================== ANIMACIONES Y EFECTOS ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#factorialResult,
+#loanSummary,
+#amortizationTable {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ==================== INDICADOR DE CARGA ==================== */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(122, 193, 67, 0.18);
+    border-radius: 50%;
+    border-top-color: var(--micoope-green);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==================== SCROLLBAR PERSONALIZADO ==================== */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #e0e4ea;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: var(--micoope-green-dark);
+}
