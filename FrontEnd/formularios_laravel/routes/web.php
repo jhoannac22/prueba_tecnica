@@ -5,9 +5,9 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 use App\Livewire\Clientes;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//})->name('home');
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
 
 Route::redirect('/', '/dashboard');
 
